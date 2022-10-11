@@ -1,11 +1,14 @@
+
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>The Best Movie</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+
 <body>
-<nav><a href="bestMovie">Find the best Movie!</a></nav>
-<p>I Love Movies!<p/>
+<nav><a href="/">Home</a></nav>
+
+<p th:text="'The best movie is: ' + ${BestMovie}" />
 </body>
 </html>
